@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Présentation des DWM12</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="search.html">Rechercher un élève</a></li>
+                <li><a href="show.html">Liste des élèves</a></li>
+                <li><a href="create.html">Créer un élève</a></li>
+                <li><a href="edit.html">Modifier des informations</a></li>
+                <li><a href="delete.html">Supprimer un élève</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="http://192.168.33.70/api/interns" method="POST" target="_blank">
+            <div>            
+                <label for="firstname">Prénom</label>
+                <input type="text" name="firstname">
+            </div>
+            <div>
+                <label for="lastname">Nom</label>
+                <input type="text" name="lastname">
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input type="number" name="age">
+            </div>
+            <div>
+                <label for="phone_number">Numéro de téléphone</label>
+                <input type="number" name="phone_number">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="text" name="email">
+            </div>
+            <div>
+                <input type="submit" value="ajouter">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p> Soline © reste éveillée </p>
+    </footer>
+        
+</body>
+</html>
